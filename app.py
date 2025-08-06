@@ -8,7 +8,7 @@ if torch.cuda.is_available():
     dtype = torch.float16
 else:
     device = "cpu"
-    dtype = torch.float32  # CPU must use float32
+    dtype = torch.float32  
 
 # Load model with appropriate dtype
 pipe = StableDiffusionPipeline.from_pretrained(
